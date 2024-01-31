@@ -64,8 +64,8 @@ namespace Esercizio_be_S1_D3_M4
             }
 
         }
-       
-        private void Prelievo() // Procedura per prelievo
+
+        public void Prelievo() // Procedura per prelievo
         {
             if (_aperturaConto == false)
             {
@@ -88,7 +88,7 @@ namespace Esercizio_be_S1_D3_M4
             }
             Menu();
         }
-        private void Versamento() // Procedura per versamento
+        public void Versamento() // Procedura per versamento
         {
             if (_aperturaConto == false)
             {
@@ -105,7 +105,7 @@ namespace Esercizio_be_S1_D3_M4
             }
             Menu();
         }
-        private void ApriContoCorrente() // Procedura per aprire conto corrente 
+        public void ApriContoCorrente() // Procedura per aprire conto corrente 
         {
 
             Console.WriteLine("Nome: ");
