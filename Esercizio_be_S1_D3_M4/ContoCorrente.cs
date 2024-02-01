@@ -16,23 +16,19 @@ namespace Esercizio_be_S1_D3_M4
         public string NomeCorrentista
         {
             get { return _nome; }
-            set { _nome = value; }
-        }
+            set { _nome = value; }}
         public string Cognome
         {
             get { return _cognome; }
-            set { _cognome = value; }
-        }
+            set { _cognome = value; }}
         public bool aperturaConto
         {
             get { return _aperturaConto; }
-            set { _aperturaConto = value; }
-        }
+            set { _aperturaConto = value; }}
         public int Saldo
         {
             get { return _saldo; }
-            set { _saldo = value; }
-        }
+            set { _saldo = value; }}
 
         // Creazione del menù per la scelta dell'opzione
         public void Menu()
@@ -112,12 +108,7 @@ namespace Esercizio_be_S1_D3_M4
             string Nome = Console.ReadLine();
             Console.WriteLine("Cognome: ");
             string Cognome = Console.ReadLine();
-            ContoCorrente c = new ContoCorrente();
-            _nome = Nome;
-            _cognome = Cognome;
-            _saldo = 0;
-            _aperturaConto = true;
-            Console.WriteLine($"Conto aperto a: {_nome} {_cognome} con saldo {_saldo}");
+            // Console.WriteLine($"Conto aperto a: {_nome} {_cognome} con saldo {_saldo}");
             Menu();
         }
 
